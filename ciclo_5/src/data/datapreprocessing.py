@@ -29,7 +29,7 @@ class DataPreprocess:
         """
         self.treined_pipeline = self.pipe.fit(dataframe)
     
-    def tranform(self, dataframe: pd.DataFrame):
+    def transform(self, dataframe: pd.DataFrame):
         """Faz as transformações no DataFrame
         
             Args:
