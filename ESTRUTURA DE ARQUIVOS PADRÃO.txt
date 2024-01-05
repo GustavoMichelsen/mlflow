@@ -1,0 +1,29 @@
+#### ESTRUTURA DE ARQUIVOS PADRÃO ####
+
+legenda:
+	"-" = pasta
+	"|" = arquivo
+	
+Estrutura:
+
+- config
+	| config.yaml
+- data
+	- docs
+	- processed
+	- raw
+- models
+	- logs
+- notebooks
+- src
+	- data
+		| __init__.py
+	- predict
+		| __init__.py
+	- train
+		| __init__.py
+	- utils
+		| __init__.py
+	| __init__.py
+| Makefile
+| README.md
