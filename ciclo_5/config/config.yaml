@@ -9,5 +9,18 @@ columns_to_use : ['target',
                   'NumeroDeEmprestimosOuLinhasImobiliarias',
                   'NumeroDeVezes60-89DiasAtrasoNaoPior',
                   'NumeroDeDependentes']
+
 train_dataset_name : 'train.csv'
 test_dataset_name : 'test.csv'
+
+target_name : 'target'
+t_size : 0.2
+r_state : 42
+
+vars_imputer : ['RendaMensal', 
+                'NumeroDeDependentes'] 
+vars_discritiser : ['TaxaDeUtilizacaoDeLinhasNaoGarantidas',
+                    'TaxaDeEndividamento',
+                    'RendaMensal']
+
+model_name : 'model.joblib'

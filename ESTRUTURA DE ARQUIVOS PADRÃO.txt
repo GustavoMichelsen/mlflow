@@ -24,6 +24,8 @@ Estrutura:
 		| __init__.py
 	- utils
 		| __init__.py
+	- evaluation
+		| __init__.py
 	| __init__.py
 | Makefile
 | README.md
