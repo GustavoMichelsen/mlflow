@@ -1,0 +1,31 @@
+Windows = set MLFLOW_TRACKING_URI=http://localhost:5000
+Linux = export MLFLOW_TRACKING_URI=http://localhost:5000
+
+mlflow models serve --model-uri models:/model.joblib/production -p 5001 --no-conda
+
+
+
+
+--- Configurações AWS ---
+# Configuração IAM de uma politica para Acesso S3
+arn:aws:iam::758422541987:policy/s3_full_access
+
+# Criar usuário - IAM
+- Permições:
+	- Politica criada S3
+	- AmazonEC2ContainerRegstryFullAccess
+	- AmazonSageMakerFullAccess
+
+Chave de acesso: AKIA3BFMBS2R762XDTRN
+Chave de acesso secreta: 
+
+# Bibliotecas
+pip install awscli boto3
+
+# Configuração AWS
+aws configure
+
+# Funções - IAM
+Criar nova função
+	- sagemaker
+ARN = arn:aws:iam::758422541987:role/sagemaker_func
