@@ -24,3 +24,10 @@ vars_discritiser : ['TaxaDeUtilizacaoDeLinhasNaoGarantidas',
                     'RendaMensal']
 
 model_name : 'model.joblib'
+
+app_name : "prob_load_sagemaker"
+arn : "arn:aws:iam::758422541987:role/sagemaker_func"
+image_ecr_uri : ""
+region : 'us-east-1'
+
+model_uri : 'C:\Servidor\OneDrive - CALCADOS BEIRA RIO S A\Documentos\repos\mlflow\mlartifacts\1\822ff65cf0da436590fc9e0fadecd697\artifacts\model.joblib'
